@@ -192,7 +192,7 @@ else:
 #ex17 Dictionaries
 #jan -> January
 #mar -> march
-monthConversions = {  # basicly a lookup table for short words to longer words
+monthConversions = {  # basically a lookup table for short words to longer words
     "Jan": "January",
     "Feb": "February",
     "Mar": "March",
@@ -246,5 +246,105 @@ else:
     print("You win!")
 print("\n")
 
-"""  # end of dissabled code
-#ex20
+
+#ex20 For loops
+for letter in "Giraffe Academy":
+    print(letter)
+
+friends = ["Jim", "Karen", "Kevin"]
+for name in friends:
+    print(name)
+    len(friends)  # get length of the array
+
+for index in range(3, 10):  # print range of number 3-10
+    print(index)
+
+for index in range(5):  # print range of number 3-10
+    if index == 0:
+        print("first Iteration")
+    else:
+        print("Not first Iteration")
+print("\n")
+
+#ex21 Exponent functions
+print(2**3) # this works
+def raise_to_power(base_num, pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+
+print(raise_to_power(2, 3))
+print("\n")       
+
+#ex22 2D lists & nested loops
+number_grid = [
+    [1,2,3], # row 0
+    [4,5,6],
+    [7,8,9],
+    [0]     # row 3
+]
+
+print(number_grid[2][1])  # print row x, colom x
+
+for row in number_grid:
+    print (row) # print all rows
+
+for row in number_grid:
+    for col in row:  # print all values in the number grid
+        print(col)
+print("\n")    
+
+#ex23 build a translator
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                translation = translation + "G"
+            else:
+                translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+print(translate(input("Enter a phrase ")))  # print out the translation of whatever the user puts in
+print("\n")  
+
+#ex24 Comments
+print("comments are fun")
+# this program is cool
+# print("text") # comment out text
+
+#
+#let's tell a long story...
+#I can easily write multiple comments
+#but # is preferred by Python users
+#
+
+print("\n")  
+
+
+#ex25 Try / Except
+# you want to be able to handle (human) error
+try:
+    # answer = 10 / 0
+    number = int(input("Enter a number: "))
+    print(number)
+except ZeroDivisionError as err: # best practice is to use specific errors, don't throw everything under one single except
+    print(err)
+except ValueError:
+    print("Invalid input")
+print("\n")
+
+
+#ex26 Reading Files
+"""  # end of disabled code
+# open("employees.txt", "r")  # open file and only read information
+# open("employees.txt", "w")  # open file and only write information
+# open("employees.txt", "a")  # open file and only add extra data to the end of the file
+# open("employees.txt", "r+")  # open file and read/write to it
+
+employee_file = open("employees.txt", "r")
+#print(employee_file.readable())  # check if the file can be read (we set it to "r")
+print(employee_file.readline())  # read all info on file
+employee_file.close()
