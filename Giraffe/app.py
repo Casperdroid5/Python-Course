@@ -338,13 +338,19 @@ print("\n")
 
 
 #ex26 Reading Files
-"""  # end of disabled code
+
 # open("employees.txt", "r")  # open file and only read information
 # open("employees.txt", "w")  # open file and only write information
 # open("employees.txt", "a")  # open file and only add extra data to the end of the file
 # open("employees.txt", "r+")  # open file and read/write to it
 
-employee_file = open("employees.txt", "r")
+# it's important to check the working directory and make sure the source root is set to the folder with the file
+employee_file = open("employees.txt", "r")  # open the file
 #print(employee_file.readable())  # check if the file can be read (we set it to "r")
-print(employee_file.readline())  # read all info on file
-employee_file.close()
+for employee in employee_file.readlines():
+    print(employee)
+employee_file.close()  # always close a file when you are done
+print("\n")
+
+"""  # end of disabled code
+#ex27 Writing to files
