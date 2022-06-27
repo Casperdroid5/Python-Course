@@ -1,6 +1,6 @@
 class Student:
 
-    def __init__(self, name, major, gpa, is_on_probation): # this is the student datatype
+    def __init__(self, name, major, gpa, is_on_probation):  # this is the student datatype
         self.name = name
         self.major = major
         self.gpa = gpa
