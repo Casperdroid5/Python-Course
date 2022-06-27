@@ -424,4 +424,4 @@ myChineseChef.make_special_dish()  # chinese chef has his own special dish
 print("\n")
 """  # end of disabled code
 
-#ex33 Python Interpreter
+#ex33 Python Interpreter (must be done in terminal or command promp)
