@@ -352,5 +352,16 @@ for employee in employee_file.readlines():
 employee_file.close()  # always close a file when you are done
 print("\n")
 
-"""  # end of disabled code
+
 #ex27 Writing to files
+employee_file = open("employees.txt", "a")  # append to file, add text to end of the file
+employee_file = open("employees.txt", "w")  # write to file, overwrites the whole file
+employee_file.write("\nKelly - Customer Service")  # add escape character to shift to new line
+employee_file.close()
+
+#ex28 Modules and Pip
+# a module is a python file that can be imported in the current python file.
+import useful_tools
+print(useful_tools.roll_dice(10))  # roll a ten sided dice, using the imported module (useful_tools)
+"""  # end of disabled code
+#ex29 Classes & Objects
