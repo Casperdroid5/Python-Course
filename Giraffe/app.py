@@ -1,6 +1,8 @@
 
-"""
-source: https://www.youtube.com/watch?v=rfscVS0vtbw
+
+# source: https://www.youtube.com/watch?v=rfscVS0vtbw
+
+# Start of course
 
 #ex1 printing text
 print("hello world!")
@@ -15,51 +17,51 @@ print("\n")
 
 #ex3 variables
 character_name = "Tom"
-character_age = "50.5678213" #what ever value you want
+character_age = "50.5678213"  # what ever value you want
 is_Male = False
 
-print("There once was a man named " + character_name +",")
+print("There once was a man named " + character_name + ",")
 print("he was " + character_age + " years old.\n")
 
-character_name = "Mike" #updated variable
+character_name = "Mike"  # updated variable
 print("He really liked the name " + character_name + ",")
 print("but didn't like being " + character_age + ".\n")
 print ("\n")
 
 #ex4 working with strings
-print("Giraffe\nAcademy") #enter within line
+print("Giraffe\nAcademy")  # enter within line
 phrase = "Giraffe Academy"
-print(phrase + " is cool") #concatination (add variable to text in this example)
+print(phrase + " is cool")  # concatenation (add variable to text in this example)
 
-print(phrase.lower()) #print in lower case
-print(phrase.upper()) #print in upper case
+print(phrase.lower())  # print in lower case
+print(phrase.upper())  # print in upper case
 
-print(phrase.isupper()) #see if string is in upper or lower case
-print(phrase.upper().isupper()) #set to uppercase and print if its true
-print(len(phrase)) #give length of string
-print(phrase[0]) #print first letter of string
-print(phrase.index("r")) #passing parameter (gives location of number)
-print(phrase.replace("Giraffe", "Elephant")) #replace function
+print(phrase.isupper())  # see if string is in upper or lower case
+print(phrase.upper().isupper())  # set to uppercase and print if it's true
+print(len(phrase))  # give length of string
+print(phrase[0])  # print first letter of string
+print(phrase.index("r"))  # passing parameter (gives location of number)
+print(phrase.replace("Giraffe", "Elephant"))  # replace function
 print ("\n")
 
 #ex5 numbers
-from math import *      #math library
-print(2) #print number
-print(-2.0987) #python prints this perfectly fine
-print(3/ 4.5) #math
-print (3 * (4 + 5)) # parentheses makes order
-print (10 % 3) #(10 mod 3) 10/3 with the remainder of 1
+from math import *      # math library
+print(2) # print number
+print(-2.0987)  # python prints this perfectly fine
+print(3/ 4.5)  # math
+print (3 * (4 + 5))  # parentheses makes order
+print (10 % 3)  # (10 mod 3) 10/3 with the remainder of 1
 
 my_num = -5
-print(str(my_num) + " is my favorite number") # converts number to string
-print(abs(my_num)) # absolute value of my_num
-print(pow(3,2)) # first number to the power of the second number
-print(max(6,4)) # return largest number
-print(min(3,8)) # return smallest number
-print(round(3.7)) # round a number
-print(floor(3.7)) # grab lowest number, chops of decimal number
-print(ceil(3.7)) # grab highest number, rounds up, no mather what.
-print(sqrt(64)) # gets square root of number
+print(str(my_num) + " is my favorite number")  # converts number to string
+print(abs(my_num))  # absolute value of my_num
+print(pow(3,2))  # first number to the power of the second number
+print(max(6,4))  # return largest number
+print(min(3,8))  # return smallest number
+print(round(3.7))  # round a number
+print(floor(3.7))  # grab lowest number, chops of decimal number
+print(ceil(3.7))  # grab highest number, rounds up, no mather what.
+print(sqrt(64))  # gets square root of number
 print("\n")
 
 #ex6 input from user
@@ -86,43 +88,39 @@ print("I love " + celebrity)
 print("\n")
 
 #ex9 Lists
-friends = ["Kevin", "Karen", "Jim", "John", "Luca"] #list, can also be boolean or numbers
-friends [1] = "Mike" #changing value of list
+friends = ["Kevin", "Karen", "Jim", "John", "Luca"]  # list, can also be boolean or numbers
+friends [1] = "Mike"  # changing value of list
 print(friends)
-print(friends[-1]) #basicly a pointer to the x-st item in the list. with negatives, you start at the back of the list.
-print(friends[1:3]) #select x up to y
+print(friends[-1])  # basically a pointer to the x-st item in the list. With negatives, you start at the back of the list.
+print(friends[1:3])  # select x up to y
 print("\n")
 
 #ex10 List functions
 lucky_numbers = [4, 8, 15, 16, 23, 42, 19, 44, 29]
-friends = ["Kevin", "Karen", "Jim", "John", "Luca", "Luca"] #list, can also be boolean or numbers
-friends.extend(lucky_numbers)   #add to list
-friends.append("Peter") # add a single item, append always adds item to end of the list
-friends.insert(1, "Kelly") # add a new item to the location of X
-friends.remove("Jim") # remove X from the list
+friends = ["Kevin", "Karen", "Jim", "John", "Luca", "Luca"]  # list, can also be boolean or numbers
+friends.extend(lucky_numbers)  # add to list
+friends.append("Peter")  # add a single item, append always adds item to end of the list
+friends.insert(1, "Kelly")  # add a new item to the location of X
+friends.remove("Jim")  # remove X from the list
 #friends.clear() # empty the whole list
-friends.pop() # pops last item of the list, removes last item
-friends.sort() # puts list in alphabetical order, also works for numbers
-friends.reverse() #reverses list
+friends.pop()  # pops last item of the list, removes last item
+#friends.sort()  # puts list in alphabetical order, also works for numbers
+friends.reverse()  # reverses list
 
-print(friends.index("Luca")) # searches for X in the list and gives the index of X
-print(friends.count("Luca")) # shows how many times X is in the list
-friends2 = friends.copy() # list 2 copies values of original list
+print(friends.index("Luca"))  # searches for X in the list and gives the index of X
+print(friends.count("Luca"))  # shows how many times X is in the list
+friends2 = friends.copy()  # list 2 copies values of original list
 print("\n")
 
 #ex11 Tuples
+#  Tuples: a container wherein we can store different values.
+#  key differences from list: tuples not mutable, cannot be changed,removed or anything, what you see is what you get.
+#  coordinates[1] = 1 <- cannot be done, since tuples values cannot be changed ever
+#  tuples is for data that is never going to change
 
-tuples: a container wherein we can store different values.
-key differences from list: tuples not mutable, cannot be changed,removed or anything, what you see is what you get.
-coordinates[1] = 1 <- cannot be done, since tuples values cannot be changed ever
-tuples is for data that is never going to change
-"""
-"""
 coordinates = (4, 5)
 print(coordinates[0])  # prints out index x
-"""
 
-"""
 # ex12 Functions
 def say_hi(name, age): # function declaration
     print("Hello " + name + ",you are: " + str(age) + " years old")
@@ -169,8 +167,7 @@ def max_num(num1, num2, num3):
         return num3
 
 
-print (max_num(300, 40, 5))
-
+print(max_num(300, 40, 5))
 
 #ex16 Building a better calculator
 num1 = float(input("Enter first number: "))
@@ -190,8 +187,8 @@ else:
     print("\n")
     
 #ex17 Dictionaries
-#jan -> January
-#mar -> march
+#Goal: jan -> January, mar -> march etc.
+
 monthConversions = {  # basically a lookup table for short words to longer words
     "Jan": "January",
     "Feb": "February",
@@ -204,7 +201,7 @@ monthConversions = {  # basically a lookup table for short words to longer words
     "Sep": "September",
     "Okt": "October",
     "Nov": "November",
-    "Dec": "December"
+    "Dec": "December",
     1: "January",
     2: "February"
 
@@ -284,10 +281,10 @@ number_grid = [
     [0]     # row 3
 ]
 
-print(number_grid[2][1])  # print row x, colom x
+print(number_grid[2][1])  # print row x, column x
 
 for row in number_grid:
-    print (row) # print all rows
+    print(row)  # print all rows
 
 for row in number_grid:
     for col in row:  # print all values in the number grid
@@ -315,14 +312,13 @@ print("comments are fun")
 # this program is cool
 # print("text") # comment out text
 
-#
-#let's tell a long story...
-#I can easily write multiple comments
-#but # is preferred by Python users
-#
+"""
+let's tell a long story...
+I can easily write multiple comments using the triple: "
+but # per line is preferred by Python users
+"""
 
 print("\n")  
-
 
 #ex25 Try / Except
 # you want to be able to handle (human) error
@@ -346,12 +342,11 @@ print("\n")
 
 # it's important to check the working directory and make sure the source root is set to the folder with the file
 employee_file = open("employees.txt", "r")  # open the file
-#print(employee_file.readable())  # check if the file can be read (we set it to "r")
+# print(employee_file.readable())  # check if the file can be read (we set it to "r")
 for employee in employee_file.readlines():
     print(employee)
 employee_file.close()  # always close a file when you are done
 print("\n")
-
 
 #ex27 Writing to files
 employee_file = open("employees.txt", "a")  # append to file, add text to end of the file
@@ -382,6 +377,7 @@ question_prompts = [
     "What color are bananas?\n(a) Teal\n(b) Magenta\n(c) Yellow\n\n",
     "What color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue\n\n",
 ]
+
 from Question import Question
 questions = [
     Question(question_prompts[0], "a"),
@@ -397,12 +393,11 @@ def run_test(questions):
             score += 1
     print("You got " + str(score) + "/" + str(len(questions)) + " correct!")
 
+
 run_test(questions)  # Run the function
 print("\n")
 
-
 #ex31 Object Functions
-
 from Student_ex31 import Student
 
 student1 = Student("Oscar", "Accounting", 3.1)
@@ -422,6 +417,7 @@ myChineseChef = ChineseChef()
 myChineseChef.make_fried_rice()
 myChineseChef.make_special_dish()  # chinese chef has his own special dish
 print("\n")
-"""  # end of disabled code
 
 #ex33 Python Interpreter (must be done in terminal or command promp)
+
+# End of course
