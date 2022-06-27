@@ -399,6 +399,29 @@ def run_test(questions):
 
 run_test(questions)  # Run the function
 print("\n")
-"""  # end of disabled code
+
 
 #ex31 Object Functions
+
+from Student_ex31 import Student
+
+student1 = Student("Oscar", "Accounting", 3.1)
+student2 = Student("Phyllis", "Business", 3.8)
+
+print(student1.on_honor_roll())  # check to see if gpa is high enough, through a function in a class
+print("\n")
+
+#ex32 Inheritance
+from Chef import Chef
+from ChineseChef import ChineseChef
+
+myChef = Chef()
+myChef.make_special_dish()
+
+myChineseChef = ChineseChef()
+myChineseChef.make_fried_rice()
+myChineseChef.make_special_dish()  # chinese chef has his own special dish
+print("\n")
+"""  # end of disabled code
+
+#ex33 Python Interpreter
